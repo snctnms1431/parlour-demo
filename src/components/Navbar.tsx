@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "@/assets/logo.png";
 import { Menu, X } from "lucide-react";
 import { site } from "@/data/site";
 
@@ -23,10 +24,19 @@ export function Navbar() {
 
   return (
     <header className="glass-nav fixed top-0 z-50 w-full border-b border-rose/10 px-6 py-4">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between">
-        <a href="#top" className="font-serif text-2xl uppercase tracking-[0.3em] text-rose">
-          {site.name}
-        </a>
+      <nav className="mx-auto flex max-w-6xl items-center justify-between text-center">
+        <a href="#top" className="flex items-center gap-1 text-rose transition-transform duration-300 hover:scale-105">
+  <img
+    src={logo}
+    alt="Nandini Makeover Logo"
+    className="h-15 w-15 object-contain"
+  />
+
+  <div className="font-serif uppercase tracking-[0.3em] leading-none">
+    <p className="text-xl">NANDINI</p>
+    <p className="text-sm">MAKEOVER</p>
+  </div>
+</a>
         <div className="hidden items-center gap-8 md:flex">
           {links.map((l) => (
             <a

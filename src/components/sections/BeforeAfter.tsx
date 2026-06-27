@@ -1,4 +1,5 @@
 import { useCallback, useRef, useState } from "react";
+
 import beforeImg from "@/assets/before.jpg";
 import afterImg from "@/assets/after.jpg";
 import { SectionHeading } from "@/components/SectionHeading";
