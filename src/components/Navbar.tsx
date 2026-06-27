@@ -29,7 +29,7 @@ export function Navbar() {
   <img
     src={logo}
     alt="Nandini Makeover Logo"
-    className="h-15 w-15 object-contain"
+    className="h-17 w-17 object-contain"
   />
 
   <div className="font-serif uppercase tracking-[0.3em] leading-none">
