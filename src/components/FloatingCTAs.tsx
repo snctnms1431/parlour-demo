@@ -23,7 +23,7 @@ export function FloatingCTAs() {
           transition={{ type: "spring", stiffness: 260, damping: 26 }}
           className="fixed inset-x-0 bottom-0 z-50 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2 md:hidden"
         >
-          <div className="glass-nav mx-auto flex max-w-md items-center gap-2 rounded-full p-2 shadow-xl shadow-rose/15">
+          <div className="glass-nav mx-auto flex max-w-md items-center gap-2 rounded-full p-2 shadow-xl shadow-black/35">
             <a
               href={`tel:${site.phone}`}
               aria-label="Call now"

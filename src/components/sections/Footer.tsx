@@ -11,7 +11,7 @@ const links = [
 
 export function Footer() {
   return (
-    <footer className="bg-onyx px-6 pb-28 pt-16 text-pearl md:pb-16">
+    <footer className="bg-onyx px-6 pb-26 pt-16 text-pearl md:pb-16">
       <div className="mx-auto max-w-6xl">
         <div className="md:flex md:items-start md:justify-between">
           <div>
@@ -37,9 +37,19 @@ export function Footer() {
             <Phone className="size-4" />
           </a>
         </div>
-        <p className="mt-10 border-t border-white/10 pt-6 text-center text-xs text-pearl/40">
-          © {new Date().getFullYear()} {site.name}. All rights reserved.
+         <a href="https://www.linkedin.com/in/harshal-nimse-73b496326/">
+        <div className= "text-center text-l  text-pearl/40 p-6">
+          <p className="text-white">Developed By <span className="text-gold ">Sanchit Nimse</span></p>
+          <p className="text-xs">B.Tech Computer Software Engineer</p>
+          <p className="text-xs">Software Developer</p>
+
+        </div>
+        </a>
+        <p className="mt-1 pt-0 text-center text-xs text-pearl/40">
+          © {new Date().getFullYear()} - Sanchit Nimse. All rights reserved.
+         
         </p>
+         
       </div>
     </footer>
   );
