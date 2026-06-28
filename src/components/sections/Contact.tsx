@@ -8,8 +8,8 @@ import { site, whatsappLink, bookingMessage } from "@/data/site";
 const WEB3FORMS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY";
 
 const details = [
-  { icon: Phone, label: "Call", value: "+91 9579114393", href: "tel:+919579114393" },
-  { icon: MessageCircle, label: "WhatsApp", value: "+91 9579114393", href: whatsappLink(bookingMessage) },
+  { icon: Phone, label: "Call", value: "+91 9067524172", href: "tel:+919067524172" },
+  { icon: MessageCircle, label: "WhatsApp", value: "+91 9067524172", href: whatsappLink(bookingMessage) },
   { icon: Mail, label: "Email", value: site.email, href: `mailto:${site.email}` },
   { icon: MapPin, label: "Studio", value: site.address },
 ];
