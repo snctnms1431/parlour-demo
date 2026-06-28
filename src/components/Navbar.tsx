@@ -23,20 +23,19 @@ export function Navbar() {
   }, [open]);
 
   return (
-    <header className="glass-nav fixed top-0 z-50 w-full border-b border-rose/10 px-6 py-4">
+    <header className="fixed top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-rose/10 px-6 py-4">
       <nav className="mx-auto flex max-w-6xl items-center justify-between text-center">
         <a href="#top" className="flex items-center gap-1 text-rose transition-transform duration-300 hover:scale-105">
-  <img
-    src={logo}
-    alt="Nandini Makeover Logo"
-    className="h-17 w-17 object-contain"
-  />
-
-  <div className="font-serif uppercase tracking-[0.3em] leading-none">
-    <p className="text-xl">NANDINI</p>
-    <p className="text-sm">MAKEOVER</p>
-  </div>
-</a>
+          <img
+            src={logo}
+            alt="Nandini Makeover Logo"
+            className="h-17 w-17 object-contain"
+          />
+          <div className="font-serif uppercase tracking-[0.3em] leading-none">
+            <p className="text-xl">NANDINI</p>
+            <p className="text-sm">MAKEOVER</p>
+          </div>
+        </a>
         <div className="hidden items-center gap-8 md:flex">
           {links.map((l) => (
             <a
@@ -63,12 +62,14 @@ export function Navbar() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-pearl px-6 py-4 md:hidden"
+            className="fixed inset-0 z-50 backdrop-blur-lg bg-white/95 px-6 py-4 md:hidden"
           >
             <div className="flex items-center justify-between">
-              <span className="font-serif text-2xl uppercase tracking-[0.3em] text-rose">
-                {site.name}
-              </span>
+              <img 
+                src={logo} 
+                alt="Nandini Makeover"
+                className="h-30 w-auto object-contain"
+              />
               <button
                 aria-label="Close menu"
                 onClick={() => setOpen(false)}
@@ -77,16 +78,17 @@ export function Navbar() {
                 <X className="size-5" />
               </button>
             </div>
-            <div className="mt-16 flex flex-col gap-8">
+            
+            <div className="mt-12 flex flex-col gap-3">
               {links.map((l, i) => (
                 <motion.a
                   key={l.href}
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  initial={{ opacity: 0, x: 20 }}
+                  initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.05 * i + 0.1 }}
-                  className="font-serif text-4xl text-onyx"
+                  className="block rounded-xl border border-gold border-2 bg-rose/80 backdrop-blur-sm px-4 py-3 font-serif text-2xl text-black  shadow-md hover:shadow-rose/20 hover:border-rose/30 transition-all duration-300"
                 >
                   {l.label}
                 </motion.a>

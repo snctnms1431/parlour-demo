@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Mail, MapPin, MessageCircle, Loader2, CheckCircle2 } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle, Loader2, CheckCircle2, Globe, Smartphone, PhoneCall } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
 import { site, whatsappLink, bookingMessage } from "@/data/site";
@@ -8,8 +8,8 @@ import { site, whatsappLink, bookingMessage } from "@/data/site";
 const WEB3FORMS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY";
 
 const details = [
-  { icon: Phone, label: "Call", value: site.phoneDisplay, href: `tel:${site.phone}` },
-  { icon: MessageCircle, label: "WhatsApp", value: site.phoneDisplay, href: whatsappLink(bookingMessage) },
+  { icon: Phone, label: "Call", value: "+91 9579114393", href: "tel:+919579114393" },
+  { icon: MessageCircle, label: "WhatsApp", value: "+91 9579114393", href: whatsappLink(bookingMessage) },
   { icon: Mail, label: "Email", value: site.email, href: `mailto:${site.email}` },
   { icon: MapPin, label: "Studio", value: site.address },
 ];
@@ -135,6 +135,64 @@ export function Contact() {
             </div>
           </form>
         </Reveal>
+        <div>
+          <Reveal className="mt-10 md:col-span-2">
+            <div className="overflow-hidden rounded-[2rem] bg-gradient-to-r from-slate-900 via-slate-800 to-black p-8 text-white shadow-2xl">
+              <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
+                <div className="max-w-2xl">
+                  <span className="rounded-full bg-emerald-500/20 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-emerald-300">
+                    Advertisement
+                  </span>
+                  <h2 className="mt-4 text-3xl font-bold">
+                    Take Your Business Online 🚀
+                  </h2>
+                  <p className="mt-4 leading-7 text-slate-300">
+                    Own a Salon, Makeup Studio, Coaching Class, Gym, Shop or any local
+                    business? I build modern Websites and Android Apps that help you
+                    attract more customers and grow your business online.
+                  </p>
+                  <div className="mt-6 flex flex-wrap gap-3">
+                    <span className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm">
+                      <Globe size={16} />
+                      Website Development
+                    </span>
+                    <span className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm">
+                      <Smartphone size={16} />
+                      Android Apps
+                    </span>
+                    <span className="rounded-full bg-white/10 px-4 py-2 text-sm">
+                      Fast Delivery
+                    </span>
+                    <span className="rounded-full bg-white/10 px-4 py-2 text-sm">
+                      Affordable Pricing
+                    </span>
+                  </div>
+                </div>
+                <div className="flex w-full flex-col gap-4 md:w-auto">
+                  <a
+                    href="https://wa.me/919579114393"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-3 rounded-full bg-green-500 px-7 py-4 font-semibold transition hover:scale-105 hover:bg-green-600"
+                  >
+                    <MessageCircle size={20} />
+                    Chat on WhatsApp
+                  </a>
+                  <a
+                    href="tel:+919579114393"
+                    className="flex items-center justify-center gap-3 rounded-full border border-white/20 px-7 py-4 transition hover:bg-white hover:text-black"
+                  >
+                    <PhoneCall size={20} />
+                    Call Now
+                  </a>
+                </div>
+              </div>
+              <div className="mt-8 border-t border-white/10 pt-5 text-center text-sm text-slate-400">
+                Designed & Developed by <span className="font-semibold text-white">Sanchit Nimse</span>
+              </div>
+            </div>
+          </Reveal>
+        </div>
       </div>
     </section>
   );

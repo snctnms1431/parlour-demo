@@ -5,14 +5,14 @@ import { BadgeCheck, Home, Sparkles } from "lucide-react";
 
 const stats = [
   { to: 3, suffix: "+", label: "Years Experience" },
-  { to: 500, suffix: "+", label: "Happy Clients" },
-  { to: 150, suffix: "+", label: "Bridal Makeups" },
-  { to: 15, suffix: "+", label: "Certifications" },
+  { to: 300, suffix: "+", label: "Happy Clients" },
+  { to: 120, suffix: "+", label: "Bridal Makeups" },
+  { to: 4, suffix: "+", label: "Certifications" },
 ];
 
 const highlights = [
   { icon: BadgeCheck, text: "Certified Makeup Artist" },
-  { icon: Home, text: "Premium Home Studio" },
+  { icon: Home, text: "Premium Home Services" },
   { icon: Sparkles, text: "Skin-Friendly Premium Products" },
 ];
 
@@ -41,7 +41,7 @@ export function About() {
             <h2 className="font-serif text-4xl md:text-5xl">Beauty, crafted with care</h2>
             <p className="mt-5 text-sm leading-relaxed text-onyx/70">
               Welcome to {""}
-              <span className="text-rose">Aura</span>. I'm a certified makeup artist with a
+              <span className="text-rose">Nandini Makeover</span>. I'm a certified makeup artist with a
               passion for enhancing natural beauty. From intimate engagements to grand
               weddings, every look is tailored to you — using premium products in a warm,
               welcoming home studio.

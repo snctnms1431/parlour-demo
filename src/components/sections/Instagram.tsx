@@ -1,12 +1,12 @@
 import { Instagram as InstagramIcon } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 import { site } from "@/data/site";
-import p1 from "@/assets/portfolio-1.jpg";
-import p3 from "@/assets/portfolio-3.jpg";
-import p4 from "@/assets/portfolio-4.jpg";
+import p12 from "@/assets/portfolio-12.jpg";
+import p5 from "@/assets/portfolio-5.jpg";
+import p11 from "@/assets/portfolio-11.jpg";
 import p7 from "@/assets/portfolio-7.jpg";
 
-const grid = [p1, p3, p4, p7];
+const grid = [p12, p5, p11, p7];
 
 export function InstagramSection() {
   return (

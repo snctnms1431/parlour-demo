@@ -27,7 +27,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.7 }}
-            className="absolute -bottom-6 -right-2 rounded-2xl border border-rose/5 bg-white p-5 shadow-xl shadow-rose/10"
+            className="absolute -bottom-6 -right-2 rounded-2xl border border-rose/5 bg-white p-3 shadow-xl shadow-rose/10"
           >
             <p className="font-serif text-2xl italic text-rose">Bridal Specialist</p>
             <p className="mt-1 text-[10px] uppercase tracking-[0.3em] text-onyx/50">

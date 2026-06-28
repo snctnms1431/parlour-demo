@@ -10,16 +10,16 @@ export interface Review {
 export const reviews: Review[] = [
   {
     id: 1,
-    name: "Priya Sharma",
+    name: "Amruta Thakre",
     rating: 5,
     comment:
-      "Aura made me feel like the most beautiful version of myself on my wedding day. The makeup lasted all night and looked flawless in every photo!",
+      "Nandini Makeovers made me feel like the most beautiful version of myself on my wedding day. The makeup lasted all night and looked flawless in every photo!",
     service: "Bridal Makeup",
     date: "April 2024",
   },
   {
     id: 2,
-    name: "Ananya Verma",
+    name: "Swara Padwal",
     rating: 5,
     comment:
       "Absolutely loved my HD makeup for the reception. So professional, gentle and attentive to every detail. Highly recommend!",
@@ -28,7 +28,7 @@ export const reviews: Review[] = [
   },
   {
     id: 3,
-    name: "Sneha Patel",
+    name: "Navya Chaudhari",
     rating: 5,
     comment:
       "The home studio is gorgeous and so relaxing. My engagement look was exactly what I dreamed of. Thank you so much!",
@@ -37,7 +37,7 @@ export const reviews: Review[] = [
   },
   {
     id: 4,
-    name: "Riya Kapoor",
+    name: "Varsha Chaudhari",
     rating: 4,
     comment:
       "Beautiful party makeup that turned heads all evening. Very talented artist with premium products.",
@@ -46,11 +46,20 @@ export const reviews: Review[] = [
   },
   {
     id: 5,
-    name: "Meera Joshi",
+    name: "Nila Kadam",
     rating: 5,
     comment:
       "From hair styling to saree draping, everything was perfect. I felt pampered and gorgeous throughout!",
     service: "Bridal Makeup",
     date: "December 2023",
   },
+    {
+    id: 6,
+    name: "Kajal Nimse",
+    rating: 5,
+    comment:
+      "From hair styling to saree draping, everything was perfect. I felt pampered and gorgeous throughout!",
+    service: "Bridal Makeup",
+    date: "December 2023",
+  }
 ];

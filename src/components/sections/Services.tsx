@@ -3,6 +3,7 @@ import { services } from "@/data/services";
 import { whatsappLink, serviceBookingMessage } from "@/data/site";
 import { MessageCircle } from "lucide-react";
 
+
 export function Services() {
   return (
     <section id="services" className="py-20">
